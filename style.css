@@ -1,0 +1,126 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+
+.container{
+    background-color:  hsl(233, 47%, 7%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 25rem;
+    width: 60rem;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    border-radius: 10px;
+    min-width: 40rem;
+}
+
+.card .desc{
+    padding: 4rem;
+    flex: 1;
+}
+
+.image{
+    background-image: url(/images/image-header-desktop.jpg);
+}
+.card img{
+    flex: 1;
+    width: 30rem;
+    height: 25rem;
+    border-radius: 0 10px 10px 0;
+}
+.title{
+    color: hsl(0, 0%, 100%);
+}
+
+span{
+    color: hsl(277, 64%, 61%);
+}
+p{
+    color:hsla(0, 0%, 100%, 0.75);
+    margin-top: 2rem;
+    font-size: .9rem;
+    line-height: 1.7;
+}
+
+.achivement{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item{
+    margin-top: 3rem;
+}
+
+.upper{
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+#lower{
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: .7rem;
+    word-spacing: 1.5rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width: 375px) {
+
+    .container{
+        width: 100%;
+        height: 100vh;
+        padding: 30px 15px;
+        /* overflow: hidden; */
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .card .desc{
+        flex: 1;
+        text-align: center;
+    }
+    .desc{
+        padding: 30px;
+    }
+    #para{
+        text-align: center;
+        font-size: 17px;
+        margin-left: 17%;
+        margin-top: 5%;
+    }
+
+    .achivement{
+        display: flex;
+        flex-direction: row;
+    }
+    .card .img{
+        flex: 1;
+    }
+    .image{
+        background-image: url(/images/image-header-mobile.jpg);
+        background-size: cover;
+    }
+}
